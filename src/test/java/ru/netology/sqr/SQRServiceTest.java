@@ -15,7 +15,7 @@ class SQRServiceTest {
             "'from over number, before over number', 99, 100000, 90"})
     void ShouldSquaresOfNumbersInTheRange(String testName, int from, int before, long expected) {
         SQRService service = new SQRService();
-        int actual = service.bruteForceOfNumbers(from, before);
+        int actual = service.squareNumbersInRange(from, before);
         assertEquals(expected, actual);
     }
 }
